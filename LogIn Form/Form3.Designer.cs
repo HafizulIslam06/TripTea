@@ -32,6 +32,7 @@ namespace LogIn_Form
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Manager));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,7 +42,6 @@ namespace LogIn_Form
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Manager));
             this.TeaPlant_Bar = new System.Windows.Forms.Panel();
             this.InventoryManagement_Bar = new System.Windows.Forms.Panel();
             this.SellManagement_Bar = new System.Windows.Forms.Panel();
@@ -59,6 +59,7 @@ namespace LogIn_Form
             this.button_Update = new System.Windows.Forms.Button();
             this.button_Browse = new System.Windows.Forms.Button();
             this.dataGridView_ManagerRecord = new System.Windows.Forms.DataGridView();
+            this.pictureBox_Manager = new System.Windows.Forms.PictureBox();
             this.textBox_UserName = new System.Windows.Forms.TextBox();
             this.label_Photo = new System.Windows.Forms.Label();
             this.label_UserName = new System.Windows.Forms.Label();
@@ -131,16 +132,15 @@ namespace LogIn_Form
             this.label19 = new System.Windows.Forms.Label();
             this.button_teaDelete = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox_Manager = new System.Windows.Forms.PictureBox();
             this.Panel_UserManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ManagerRecord)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).BeginInit();
             this.panel_SellManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel_InventoryManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Inventory)).BeginInit();
             this.panel_TeaPlantManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).BeginInit();
             this.SuspendLayout();
             // 
             // TeaPlant_Bar
@@ -281,7 +281,7 @@ namespace LogIn_Form
             // 
             // label_ManagerRecord
             // 
-            this.label_ManagerRecord.BackColor = System.Drawing.Color.DarkKhaki;
+            this.label_ManagerRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label_ManagerRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ManagerRecord.ForeColor = System.Drawing.Color.White;
             this.label_ManagerRecord.Location = new System.Drawing.Point(575, 10);
@@ -357,6 +357,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView_ManagerRecord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_ManagerRecord.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView_ManagerRecord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -383,6 +384,16 @@ namespace LogIn_Form
             this.dataGridView_ManagerRecord.Size = new System.Drawing.Size(1002, 601);
             this.dataGridView_ManagerRecord.TabIndex = 27;
             this.dataGridView_ManagerRecord.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+            // 
+            // pictureBox_Manager
+            // 
+            this.pictureBox_Manager.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Manager.Image")));
+            this.pictureBox_Manager.Location = new System.Drawing.Point(222, 295);
+            this.pictureBox_Manager.Name = "pictureBox_Manager";
+            this.pictureBox_Manager.Size = new System.Drawing.Size(345, 124);
+            this.pictureBox_Manager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Manager.TabIndex = 26;
+            this.pictureBox_Manager.TabStop = false;
             // 
             // textBox_UserName
             // 
@@ -607,7 +618,7 @@ namespace LogIn_Form
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkKhaki;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(575, 10);
@@ -638,8 +649,9 @@ namespace LogIn_Form
             // 
             // button_SellReset
             // 
-            this.button_SellReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_SellReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_SellReset.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button_SellReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_SellReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SellReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_SellReset.ForeColor = System.Drawing.Color.White;
@@ -653,8 +665,9 @@ namespace LogIn_Form
             // 
             // button_SellUpdate
             // 
-            this.button_SellUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_SellUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_SellUpdate.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.button_SellUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_SellUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SellUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_SellUpdate.ForeColor = System.Drawing.Color.White;
@@ -670,6 +683,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -775,8 +789,9 @@ namespace LogIn_Form
             // 
             // button_SellDelete
             // 
-            this.button_SellDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_SellDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_SellDelete.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button_SellDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_SellDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SellDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_SellDelete.ForeColor = System.Drawing.Color.White;
@@ -790,8 +805,9 @@ namespace LogIn_Form
             // 
             // button_SellCreate
             // 
-            this.button_SellCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_SellCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_SellCreate.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button_SellCreate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_SellCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SellCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_SellCreate.ForeColor = System.Drawing.Color.White;
@@ -832,6 +848,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView_Inventory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView_Inventory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -891,7 +908,7 @@ namespace LogIn_Form
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.DarkKhaki;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(575, 10);
@@ -922,8 +939,9 @@ namespace LogIn_Form
             // 
             // button_ResetInventory
             // 
-            this.button_ResetInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_ResetInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_ResetInventory.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button_ResetInventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_ResetInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ResetInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ResetInventory.ForeColor = System.Drawing.Color.White;
@@ -937,8 +955,9 @@ namespace LogIn_Form
             // 
             // button_UpdateInventory
             // 
-            this.button_UpdateInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_UpdateInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_UpdateInventory.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.button_UpdateInventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_UpdateInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_UpdateInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_UpdateInventory.ForeColor = System.Drawing.Color.White;
@@ -1020,8 +1039,9 @@ namespace LogIn_Form
             // 
             // button_DeleteInventory
             // 
-            this.button_DeleteInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_DeleteInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_DeleteInventory.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button_DeleteInventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_DeleteInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_DeleteInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_DeleteInventory.ForeColor = System.Drawing.Color.White;
@@ -1035,8 +1055,9 @@ namespace LogIn_Form
             // 
             // button_CreateInventory
             // 
-            this.button_CreateInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_CreateInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_CreateInventory.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button_CreateInventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_CreateInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CreateInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_CreateInventory.ForeColor = System.Drawing.Color.White;
@@ -1075,6 +1096,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -1104,7 +1126,7 @@ namespace LogIn_Form
             // 
             // label_TeaRecord
             // 
-            this.label_TeaRecord.BackColor = System.Drawing.Color.DarkKhaki;
+            this.label_TeaRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label_TeaRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_TeaRecord.ForeColor = System.Drawing.Color.White;
             this.label_TeaRecord.Location = new System.Drawing.Point(575, 10);
@@ -1116,8 +1138,9 @@ namespace LogIn_Form
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
@@ -1131,8 +1154,9 @@ namespace LogIn_Form
             // 
             // button_TeaUpdate
             // 
-            this.button_TeaUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_TeaUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_TeaUpdate.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.button_TeaUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_TeaUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_TeaUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_TeaUpdate.ForeColor = System.Drawing.Color.White;
@@ -1242,8 +1266,9 @@ namespace LogIn_Form
             // 
             // button_teaDelete
             // 
-            this.button_teaDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_teaDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_teaDelete.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button_teaDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_teaDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_teaDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_teaDelete.ForeColor = System.Drawing.Color.White;
@@ -1257,8 +1282,9 @@ namespace LogIn_Form
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
@@ -1269,16 +1295,6 @@ namespace LogIn_Form
             this.button5.Text = "Add";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button_TeaAdd_Click);
-            // 
-            // pictureBox_Manager
-            // 
-            this.pictureBox_Manager.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Manager.Image")));
-            this.pictureBox_Manager.Location = new System.Drawing.Point(222, 295);
-            this.pictureBox_Manager.Name = "pictureBox_Manager";
-            this.pictureBox_Manager.Size = new System.Drawing.Size(345, 124);
-            this.pictureBox_Manager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Manager.TabIndex = 26;
-            this.pictureBox_Manager.TabStop = false;
             // 
             // Form_Manager
             // 
@@ -1295,16 +1311,17 @@ namespace LogIn_Form
             this.Controls.Add(this.button_SellManagement);
             this.Controls.Add(this.button_StaffManagement);
             this.Controls.Add(this.label_ManagerPanel);
-            this.Controls.Add(this.Panel_UserManagement);
-            this.Controls.Add(this.panel_TeaPlantManagement);
             this.Controls.Add(this.panel_InventoryManagement);
             this.Controls.Add(this.panel_SellManagement);
+            this.Controls.Add(this.Panel_UserManagement);
+            this.Controls.Add(this.panel_TeaPlantManagement);
             this.Name = "Form_Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Manager";
             this.Panel_UserManagement.ResumeLayout(false);
             this.Panel_UserManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ManagerRecord)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).EndInit();
             this.panel_SellManagement.ResumeLayout(false);
             this.panel_SellManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1314,7 +1331,6 @@ namespace LogIn_Form
             this.panel_TeaPlantManagement.ResumeLayout(false);
             this.panel_TeaPlantManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
