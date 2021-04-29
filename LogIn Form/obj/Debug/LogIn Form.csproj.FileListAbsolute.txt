@@ -1,0 +1,11 @@
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\bin\Debug\LogIn Form.exe.config
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\bin\Debug\LogIn Form.exe
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\bin\Debug\LogIn Form.pdb
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn Form.csprojAssemblyReference.cache
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn_Form.Properties.Resources.resources
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn Form.csproj.GenerateResource.cache
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn Form.csproj.CoreCompileInputs.cache
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn Form.exe
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn Form.pdb
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn_Form.Admin_Form.resources
+C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\LogIn_Form.LogIn_Form.resources
