@@ -139,5 +139,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PasswordIcon.png" />
+    <Content Include="Resources\teamwork.png" />
+    <Content Include="Resources\UsernameIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

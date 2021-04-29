@@ -32,7 +32,6 @@ namespace LogIn_Form
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Form));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -42,6 +41,7 @@ namespace LogIn_Form
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Form));
             this.label_AdminPanel = new System.Windows.Forms.Label();
             this.button_UserManagement = new System.Windows.Forms.Button();
             this.button_SellManagement = new System.Windows.Forms.Button();
@@ -59,7 +59,6 @@ namespace LogIn_Form
             this.button_Update = new System.Windows.Forms.Button();
             this.button_Browse = new System.Windows.Forms.Button();
             this.dataGridView_ManagerRecord = new System.Windows.Forms.DataGridView();
-            this.pictureBox_Manager = new System.Windows.Forms.PictureBox();
             this.textBox_UserName = new System.Windows.Forms.TextBox();
             this.label_Photo = new System.Windows.Forms.Label();
             this.label_UserName = new System.Windows.Forms.Label();
@@ -96,15 +95,16 @@ namespace LogIn_Form
             this.dataGridView_TeaRecord = new System.Windows.Forms.DataGridView();
             this.label_TeaRecord = new System.Windows.Forms.Label();
             this.panel_TeaPlantManagement = new System.Windows.Forms.Panel();
+            this.pictureBox_Manager = new System.Windows.Forms.PictureBox();
             this.Panel_UserManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ManagerRecord)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).BeginInit();
             this.panel_sellManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SellRecord)).BeginInit();
             this.panel_InventoryManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_InventoryManagement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_TeaRecord)).BeginInit();
             this.panel_TeaPlantManagement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).BeginInit();
             this.SuspendLayout();
             // 
             // label_AdminPanel
@@ -345,16 +345,6 @@ namespace LogIn_Form
             this.dataGridView_ManagerRecord.Size = new System.Drawing.Size(1002, 601);
             this.dataGridView_ManagerRecord.TabIndex = 27;
             this.dataGridView_ManagerRecord.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
-            // 
-            // pictureBox_Manager
-            // 
-            this.pictureBox_Manager.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Manager.Image")));
-            this.pictureBox_Manager.Location = new System.Drawing.Point(222, 295);
-            this.pictureBox_Manager.Name = "pictureBox_Manager";
-            this.pictureBox_Manager.Size = new System.Drawing.Size(345, 124);
-            this.pictureBox_Manager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Manager.TabIndex = 26;
-            this.pictureBox_Manager.TabStop = false;
             // 
             // textBox_UserName
             // 
@@ -789,11 +779,21 @@ namespace LogIn_Form
             this.panel_TeaPlantManagement.Size = new System.Drawing.Size(1659, 738);
             this.panel_TeaPlantManagement.TabIndex = 16;
             // 
+            // pictureBox_Manager
+            // 
+            this.pictureBox_Manager.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Manager.Image")));
+            this.pictureBox_Manager.Location = new System.Drawing.Point(222, 295);
+            this.pictureBox_Manager.Name = "pictureBox_Manager";
+            this.pictureBox_Manager.Size = new System.Drawing.Size(345, 124);
+            this.pictureBox_Manager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Manager.TabIndex = 26;
+            this.pictureBox_Manager.TabStop = false;
+            // 
             // Admin_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1655, 903);
             this.Controls.Add(this.TeaPlant_Bar);
             this.Controls.Add(this.InventoryManagement_Bar);
@@ -814,7 +814,6 @@ namespace LogIn_Form
             this.Panel_UserManagement.ResumeLayout(false);
             this.Panel_UserManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ManagerRecord)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).EndInit();
             this.panel_sellManagement.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SellRecord)).EndInit();
             this.panel_InventoryManagement.ResumeLayout(false);
@@ -822,6 +821,7 @@ namespace LogIn_Form
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_TeaRecord)).EndInit();
             this.panel_TeaPlantManagement.ResumeLayout(false);
             this.panel_TeaPlantManagement.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

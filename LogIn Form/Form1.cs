@@ -100,9 +100,13 @@ namespace LogIn_Form
         }
         private void Reset()
         {
-            textBox_A_UserName.Text = "";
-            textBox_A_password.Text = "";
+            textBox_A_UserName.Clear();
+            textBox_A_password.Clear();
             checkBox_A.Checked = false;
+
+            textBox_M_Username.Clear();
+            textBox_M_Password.Clear();
+            checkBox_M.Checked = false;
         }
 
         private void checkBox_M_CheckedChanged(object sender, EventArgs e)
@@ -146,6 +150,28 @@ namespace LogIn_Form
                 }
                 con.Close();
             }
-        }        
+        }
+
+        private void textBox_A_UserName_Click(object sender, EventArgs e)
+        {
+            textBox_A_UserName.Clear();
+        }
+
+        private void textBox_A_password_Click(object sender, EventArgs e)
+        {
+            textBox_A_password.Clear();
+            textBox_A_password.UseSystemPasswordChar = true;
+        }
+
+        private void textBox_M_Username_Click(object sender, EventArgs e)
+        {
+            textBox_M_Username.Clear();
+        }
+
+        private void textBox_M_Password_Click(object sender, EventArgs e)
+        {
+            textBox_M_Password.Clear();
+            textBox_M_Password.UseSystemPasswordChar = true;
+        }
     }
 }

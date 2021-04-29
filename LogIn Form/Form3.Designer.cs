@@ -1280,7 +1280,7 @@ namespace LogIn_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1658, 906);
             this.Controls.Add(this.TeaPlant_Bar);
             this.Controls.Add(this.InventoryManagement_Bar);

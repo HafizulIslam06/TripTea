@@ -18,6 +18,7 @@ namespace LogIn_Form
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new LogIn_Form());
             Application.Run(new Form4());
+
         }
     }
 }

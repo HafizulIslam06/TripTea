@@ -73,9 +73,29 @@ namespace LogIn_Form.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PasswordIcon {
+            get {
+                object obj = ResourceManager.GetObject("PasswordIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap teamwork {
             get {
                 object obj = ResourceManager.GetObject("teamwork", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UsernameIcon {
+            get {
+                object obj = ResourceManager.GetObject("UsernameIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
