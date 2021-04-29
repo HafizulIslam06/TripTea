@@ -140,8 +140,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\padlock %281%29.png" />
+    <None Include="Resources\lock.png" />
     <Content Include="Resources\PasswordIcon.png" />
+    <None Include="Resources\PasswordIcon1.png" />
     <Content Include="Resources\teamwork.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\user1.png" />
     <Content Include="Resources\UsernameIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

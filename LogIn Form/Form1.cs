@@ -53,8 +53,8 @@ namespace LogIn_Form
                 if (dr.HasRows == true)
                 {
                     this.Hide();
-                    Admin_Form AdminForm = new Admin_Form();
-                    AdminForm.ShowDialog();
+                    Form4 dsh_frm = new Form4();
+                    dsh_frm.ShowDialog();                    
                 }
                 else
                 {
@@ -76,38 +76,31 @@ namespace LogIn_Form
         
         private void Admin_Click(object sender, EventArgs e)
         {
+            textBox_M_Username.Text = "Username";
+            textBox_M_Password.Text = "Password";
+
             panel_AdminLogIn.BringToFront();
             Admin_Button.BackColor = select_color;            
             Manager_button.BackColor = unSelected_color;
 
             panel1.BackColor = bar_selected;
-            panel2.BackColor = bar_unselected;
-
-            Reset();
+            panel2.BackColor = bar_unselected;           
         }
         
 
         private void Manager_Click(object sender, EventArgs e)
         {
+            textBox_A_UserName.Text = "Username";
+            textBox_A_password.Text = "Password";
+
             panel_Manager_LogIn.BringToFront();
             Manager_button.BackColor = select_color;            
             Admin_Button.BackColor = unSelected_color;
 
             panel2.BackColor = bar_selected;
-            panel1.BackColor = bar_unselected;
-
-            Reset();
+            panel1.BackColor = bar_unselected;            
         }
-        private void Reset()
-        {
-            textBox_A_UserName.Clear();
-            textBox_A_password.Clear();
-            checkBox_A.Checked = false;
-
-            textBox_M_Username.Clear();
-            textBox_M_Password.Clear();
-            checkBox_M.Checked = false;
-        }
+            
 
         private void checkBox_M_CheckedChanged(object sender, EventArgs e)
         {

@@ -32,7 +32,6 @@ namespace LogIn_Form
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Manager));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -42,6 +41,7 @@ namespace LogIn_Form
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Manager));
             this.TeaPlant_Bar = new System.Windows.Forms.Panel();
             this.InventoryManagement_Bar = new System.Windows.Forms.Panel();
             this.SellManagement_Bar = new System.Windows.Forms.Panel();
@@ -59,7 +59,6 @@ namespace LogIn_Form
             this.button_Update = new System.Windows.Forms.Button();
             this.button_Browse = new System.Windows.Forms.Button();
             this.dataGridView_ManagerRecord = new System.Windows.Forms.DataGridView();
-            this.pictureBox_Manager = new System.Windows.Forms.PictureBox();
             this.textBox_UserName = new System.Windows.Forms.TextBox();
             this.label_Photo = new System.Windows.Forms.Label();
             this.label_UserName = new System.Windows.Forms.Label();
@@ -132,15 +131,16 @@ namespace LogIn_Form
             this.label19 = new System.Windows.Forms.Label();
             this.button_teaDelete = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox_Manager = new System.Windows.Forms.PictureBox();
             this.Panel_UserManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ManagerRecord)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).BeginInit();
             this.panel_SellManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel_InventoryManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Inventory)).BeginInit();
             this.panel_TeaPlantManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).BeginInit();
             this.SuspendLayout();
             // 
             // TeaPlant_Bar
@@ -312,8 +312,9 @@ namespace LogIn_Form
             // 
             // button_Reset
             // 
-            this.button_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_Reset.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button_Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Reset.ForeColor = System.Drawing.Color.White;
@@ -327,8 +328,9 @@ namespace LogIn_Form
             // 
             // button_Update
             // 
-            this.button_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_Update.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.button_Update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Update.ForeColor = System.Drawing.Color.White;
@@ -381,16 +383,6 @@ namespace LogIn_Form
             this.dataGridView_ManagerRecord.Size = new System.Drawing.Size(1002, 601);
             this.dataGridView_ManagerRecord.TabIndex = 27;
             this.dataGridView_ManagerRecord.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
-            // 
-            // pictureBox_Manager
-            // 
-            this.pictureBox_Manager.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Manager.Image")));
-            this.pictureBox_Manager.Location = new System.Drawing.Point(222, 295);
-            this.pictureBox_Manager.Name = "pictureBox_Manager";
-            this.pictureBox_Manager.Size = new System.Drawing.Size(345, 124);
-            this.pictureBox_Manager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Manager.TabIndex = 26;
-            this.pictureBox_Manager.TabStop = false;
             // 
             // textBox_UserName
             // 
@@ -538,8 +530,9 @@ namespace LogIn_Form
             // 
             // button_Delete
             // 
-            this.button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_Delete.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button_Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Delete.ForeColor = System.Drawing.Color.White;
@@ -553,8 +546,9 @@ namespace LogIn_Form
             // 
             // button_CreateManager
             // 
-            this.button_CreateManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_CreateManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_CreateManager.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button_CreateManager.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_CreateManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CreateManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_CreateManager.ForeColor = System.Drawing.Color.White;
@@ -756,9 +750,9 @@ namespace LogIn_Form
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(76, 114);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 29);
+            this.label8.Size = new System.Drawing.Size(83, 29);
             this.label8.TabIndex = 17;
-            this.label8.Text = "Address";
+            this.label8.Text = "Dollar";
             // 
             // textBox_S_Buyer
             // 
@@ -1276,6 +1270,16 @@ namespace LogIn_Form
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button_TeaAdd_Click);
             // 
+            // pictureBox_Manager
+            // 
+            this.pictureBox_Manager.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Manager.Image")));
+            this.pictureBox_Manager.Location = new System.Drawing.Point(222, 295);
+            this.pictureBox_Manager.Name = "pictureBox_Manager";
+            this.pictureBox_Manager.Size = new System.Drawing.Size(345, 124);
+            this.pictureBox_Manager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Manager.TabIndex = 26;
+            this.pictureBox_Manager.TabStop = false;
+            // 
             // Form_Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1301,7 +1305,6 @@ namespace LogIn_Form
             this.Panel_UserManagement.ResumeLayout(false);
             this.Panel_UserManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ManagerRecord)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).EndInit();
             this.panel_SellManagement.ResumeLayout(false);
             this.panel_SellManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1311,6 +1314,7 @@ namespace LogIn_Form
             this.panel_TeaPlantManagement.ResumeLayout(false);
             this.panel_TeaPlantManagement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Manager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

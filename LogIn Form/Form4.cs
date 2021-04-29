@@ -36,5 +36,16 @@ namespace LogIn_Form
             chart1.Series["Sale"].YValueMembers = "Sell";
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Admin_Form AdminForm = new Admin_Form();
+            AdminForm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -16,6 +16,10 @@ namespace LogIn_Form
     public partial class Form_Manager : Form
     {
         String username = LogIn_Form.saveUsername;
+        public static int Product;
+        public static int Cost;
+        public static int Sell;
+
         string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
         public Form_Manager()
         {
@@ -309,13 +313,13 @@ namespace LogIn_Form
 
             cmd.Parameters.AddWithValue("@Serial", Convert.ToInt16(textBox_S_Serial.Text));            
             cmd.Parameters.AddWithValue("@Buyer", textBox_S_Buyer.Text);
-            cmd.Parameters.AddWithValue("@Address", textBox_S_Address.Text);
+            cmd.Parameters.AddWithValue("@Address",textBox_S_Address.Text);
             cmd.Parameters.AddWithValue("@Email", textBox_S_Email.Text);
             cmd.Parameters.AddWithValue("@PhoneNo", textBox_S_Phone.Text);
             cmd.Parameters.AddWithValue("@Note", textBox_S_Note.Text);
             cmd.Parameters.AddWithValue("@userName", LogIn_Form.saveUsername);
-            
 
+            Sell = Convert.ToInt16(textBox_S_Address.Text);
             //Admin_Form admnfrm = new Admin_Form(textBox_S_Serial.ToString(), textBox_S_Buyer.Text, textBox_S_Address.Text, textBox_S_Email.Text, textBox_S_Phone.Text, textBox_S_Note.Text);
 
             con.Open();
@@ -432,6 +436,8 @@ namespace LogIn_Form
             cmd.Parameters.AddWithValue("@TotalSell", textBox5.Text);
             cmd.Parameters.AddWithValue("@Note", textBox1.Text);
             cmd.Parameters.AddWithValue("@userName", LogIn_Form.saveUsername);
+
+            Cost = Convert.ToInt16(textBox6.Text) + Convert.ToInt16(textBox4.Text);
 
             con.Open();
             int a = cmd.ExecuteNonQuery();
@@ -552,6 +558,8 @@ namespace LogIn_Form
             cmd.Parameters.AddWithValue("@Note", textBox3.Text);
             cmd.Parameters.AddWithValue("@userName", LogIn_Form.saveUsername);
 
+            Product = Convert.ToInt16(textBox9.Text);
+
             con.Open();
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
@@ -559,11 +567,27 @@ namespace LogIn_Form
                 MessageBox.Show("Data Inserted Successfully");
                 dataGridView_TeaRecord();
                 TeaManagement_ResetText();
+                PassToAnalysisTable();
             }
             else
             {
                 MessageBox.Show("Data Inserted Failed");
             }
+        }
+
+        private void PassToAnalysisTable()
+        {
+            SqlConnection con = new SqlConnection(cs);
+            string query = "Insert into Analysis_Table values (@Name,@Product,@Cost,@Sell)";
+            SqlCommand cmd = new SqlCommand(query, con);
+                       
+            cmd.Parameters.AddWithValue("@Name", LogIn_Form.saveUsername);
+            cmd.Parameters.AddWithValue("@Product", Product);
+            cmd.Parameters.AddWithValue("@Cost", Cost);
+            cmd.Parameters.AddWithValue("@Sell", Sell);
+
+            con.Open();
+            cmd.ExecuteNonQuery();
         }
 
         private void dataGridView_TeaRecord()

@@ -245,7 +245,9 @@ namespace LogIn_Form
             // 
             // label_ManagerRecord
             // 
-            this.label_ManagerRecord.BackColor = System.Drawing.Color.DarkKhaki;
+            this.label_ManagerRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_ManagerRecord.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_ManagerRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_ManagerRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ManagerRecord.ForeColor = System.Drawing.Color.White;
             this.label_ManagerRecord.Location = new System.Drawing.Point(575, 10);
@@ -276,8 +278,9 @@ namespace LogIn_Form
             // 
             // button_Reset
             // 
-            this.button_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_Reset.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button_Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Reset.ForeColor = System.Drawing.Color.White;
@@ -291,8 +294,9 @@ namespace LogIn_Form
             // 
             // button_Update
             // 
-            this.button_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_Update.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.button_Update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Update.ForeColor = System.Drawing.Color.White;
@@ -319,6 +323,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView_ManagerRecord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_ManagerRecord.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView_ManagerRecord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -492,8 +497,9 @@ namespace LogIn_Form
             // 
             // button_Delete
             // 
-            this.button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_Delete.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button_Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Delete.ForeColor = System.Drawing.Color.White;
@@ -507,8 +513,9 @@ namespace LogIn_Form
             // 
             // button_CreateManager
             // 
-            this.button_CreateManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_CreateManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.button_CreateManager.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button_CreateManager.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_CreateManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CreateManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_CreateManager.ForeColor = System.Drawing.Color.White;
@@ -531,12 +538,12 @@ namespace LogIn_Form
             // 
             // label_SellRecord
             // 
-            this.label_SellRecord.BackColor = System.Drawing.Color.DarkKhaki;
-            this.label_SellRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_SellRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_SellRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_SellRecord.ForeColor = System.Drawing.Color.White;
-            this.label_SellRecord.Location = new System.Drawing.Point(72, 0);
+            this.label_SellRecord.Location = new System.Drawing.Point(71, 4);
             this.label_SellRecord.Name = "label_SellRecord";
-            this.label_SellRecord.Size = new System.Drawing.Size(1504, 60);
+            this.label_SellRecord.Size = new System.Drawing.Size(1505, 50);
             this.label_SellRecord.TabIndex = 35;
             this.label_SellRecord.Text = "Sell\'s Record";
             this.label_SellRecord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -545,6 +552,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView_SellRecord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView_SellRecord.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView_SellRecord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -564,11 +572,11 @@ namespace LogIn_Form
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_SellRecord.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView_SellRecord.EnableHeadersVisualStyles = false;
-            this.dataGridView_SellRecord.Location = new System.Drawing.Point(71, 60);
+            this.dataGridView_SellRecord.Location = new System.Drawing.Point(71, 57);
             this.dataGridView_SellRecord.Name = "dataGridView_SellRecord";
             this.dataGridView_SellRecord.RowHeadersWidth = 51;
             this.dataGridView_SellRecord.RowTemplate.Height = 24;
-            this.dataGridView_SellRecord.Size = new System.Drawing.Size(1505, 668);
+            this.dataGridView_SellRecord.Size = new System.Drawing.Size(1505, 671);
             this.dataGridView_SellRecord.TabIndex = 27;
             // 
             // panel_InventoryManagement
@@ -582,12 +590,12 @@ namespace LogIn_Form
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkKhaki;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(72, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1504, 60);
+            this.label1.Size = new System.Drawing.Size(1504, 50);
             this.label1.TabIndex = 35;
             this.label1.Text = "Inventory Record";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -596,6 +604,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView_InventoryManagement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView_InventoryManagement.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView_InventoryManagement.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -615,11 +624,11 @@ namespace LogIn_Form
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_InventoryManagement.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView_InventoryManagement.EnableHeadersVisualStyles = false;
-            this.dataGridView_InventoryManagement.Location = new System.Drawing.Point(71, 60);
+            this.dataGridView_InventoryManagement.Location = new System.Drawing.Point(71, 46);
             this.dataGridView_InventoryManagement.Name = "dataGridView_InventoryManagement";
             this.dataGridView_InventoryManagement.RowHeadersWidth = 51;
             this.dataGridView_InventoryManagement.RowTemplate.Height = 24;
-            this.dataGridView_InventoryManagement.Size = new System.Drawing.Size(1505, 668);
+            this.dataGridView_InventoryManagement.Size = new System.Drawing.Size(1505, 682);
             this.dataGridView_InventoryManagement.TabIndex = 27;
             // 
             // label11
@@ -722,6 +731,7 @@ namespace LogIn_Form
             // 
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView_TeaRecord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView_TeaRecord.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView_TeaRecord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(70)))));
@@ -741,21 +751,21 @@ namespace LogIn_Form
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_TeaRecord.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView_TeaRecord.EnableHeadersVisualStyles = false;
-            this.dataGridView_TeaRecord.Location = new System.Drawing.Point(75, 50);
+            this.dataGridView_TeaRecord.Location = new System.Drawing.Point(75, 67);
             this.dataGridView_TeaRecord.Name = "dataGridView_TeaRecord";
             this.dataGridView_TeaRecord.RowHeadersWidth = 51;
             this.dataGridView_TeaRecord.RowTemplate.Height = 24;
-            this.dataGridView_TeaRecord.Size = new System.Drawing.Size(1501, 668);
+            this.dataGridView_TeaRecord.Size = new System.Drawing.Size(1501, 651);
             this.dataGridView_TeaRecord.TabIndex = 27;
             // 
             // label_TeaRecord
             // 
-            this.label_TeaRecord.BackColor = System.Drawing.Color.DarkKhaki;
+            this.label_TeaRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label_TeaRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_TeaRecord.ForeColor = System.Drawing.Color.White;
             this.label_TeaRecord.Location = new System.Drawing.Point(74, 10);
             this.label_TeaRecord.Name = "label_TeaRecord";
-            this.label_TeaRecord.Size = new System.Drawing.Size(1502, 40);
+            this.label_TeaRecord.Size = new System.Drawing.Size(1505, 54);
             this.label_TeaRecord.TabIndex = 35;
             this.label_TeaRecord.Text = "Tea Record";
             this.label_TeaRecord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -804,10 +814,10 @@ namespace LogIn_Form
             this.Controls.Add(this.button_SellManagement);
             this.Controls.Add(this.button_UserManagement);
             this.Controls.Add(this.label_AdminPanel);
-            this.Controls.Add(this.Panel_UserManagement);
-            this.Controls.Add(this.panel_TeaPlantManagement);
             this.Controls.Add(this.panel_InventoryManagement);
             this.Controls.Add(this.panel_sellManagement);
+            this.Controls.Add(this.Panel_UserManagement);
+            this.Controls.Add(this.panel_TeaPlantManagement);
             this.Name = "Admin_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Panel";
