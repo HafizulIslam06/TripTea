@@ -145,6 +145,7 @@ namespace LogIn_Form
             // 
             // TeaPlant_Bar
             // 
+            this.TeaPlant_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.TeaPlant_Bar.Location = new System.Drawing.Point(1205, 143);
             this.TeaPlant_Bar.Name = "TeaPlant_Bar";
             this.TeaPlant_Bar.Size = new System.Drawing.Size(373, 10);
@@ -152,6 +153,7 @@ namespace LogIn_Form
             // 
             // InventoryManagement_Bar
             // 
+            this.InventoryManagement_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.InventoryManagement_Bar.Location = new System.Drawing.Point(828, 143);
             this.InventoryManagement_Bar.Name = "InventoryManagement_Bar";
             this.InventoryManagement_Bar.Size = new System.Drawing.Size(373, 10);
@@ -159,6 +161,7 @@ namespace LogIn_Form
             // 
             // SellManagement_Bar
             // 
+            this.SellManagement_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.SellManagement_Bar.Location = new System.Drawing.Point(451, 143);
             this.SellManagement_Bar.Name = "SellManagement_Bar";
             this.SellManagement_Bar.Size = new System.Drawing.Size(373, 10);
@@ -174,9 +177,10 @@ namespace LogIn_Form
             // 
             // button_Inventory
             // 
-            this.button_Inventory.BackColor = System.Drawing.Color.Black;
+            this.button_Inventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.button_Inventory.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_Inventory.FlatAppearance.BorderSize = 0;
+            this.button_Inventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Inventory.ForeColor = System.Drawing.Color.White;
@@ -190,9 +194,10 @@ namespace LogIn_Form
             // 
             // button_TeaPlant
             // 
-            this.button_TeaPlant.BackColor = System.Drawing.Color.Black;
+            this.button_TeaPlant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.button_TeaPlant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_TeaPlant.FlatAppearance.BorderSize = 0;
+            this.button_TeaPlant.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_TeaPlant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_TeaPlant.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_TeaPlant.ForeColor = System.Drawing.Color.White;
@@ -206,9 +211,10 @@ namespace LogIn_Form
             // 
             // button_SellManagement
             // 
-            this.button_SellManagement.BackColor = System.Drawing.Color.Black;
+            this.button_SellManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.button_SellManagement.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_SellManagement.FlatAppearance.BorderSize = 0;
+            this.button_SellManagement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_SellManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SellManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_SellManagement.ForeColor = System.Drawing.Color.White;
@@ -222,7 +228,7 @@ namespace LogIn_Form
             // 
             // button_StaffManagement
             // 
-            this.button_StaffManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.button_StaffManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.button_StaffManagement.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_StaffManagement.FlatAppearance.BorderSize = 0;
             this.button_StaffManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -815,7 +821,7 @@ namespace LogIn_Form
             this.button_SellCreate.Name = "button_SellCreate";
             this.button_SellCreate.Size = new System.Drawing.Size(368, 47);
             this.button_SellCreate.TabIndex = 6;
-            this.button_SellCreate.Text = "Create";
+            this.button_SellCreate.Text = "Add";
             this.button_SellCreate.UseVisualStyleBackColor = false;
             this.button_SellCreate.Click += new System.EventHandler(this.button_SellCreate_Click);
             // 
@@ -1065,7 +1071,7 @@ namespace LogIn_Form
             this.button_CreateInventory.Name = "button_CreateInventory";
             this.button_CreateInventory.Size = new System.Drawing.Size(368, 47);
             this.button_CreateInventory.TabIndex = 6;
-            this.button_CreateInventory.Text = "Create";
+            this.button_CreateInventory.Text = "Add";
             this.button_CreateInventory.UseVisualStyleBackColor = false;
             this.button_CreateInventory.Click += new System.EventHandler(this.button_CreateInventory_Click);
             // 
@@ -1311,10 +1317,10 @@ namespace LogIn_Form
             this.Controls.Add(this.button_SellManagement);
             this.Controls.Add(this.button_StaffManagement);
             this.Controls.Add(this.label_ManagerPanel);
-            this.Controls.Add(this.panel_InventoryManagement);
-            this.Controls.Add(this.panel_SellManagement);
             this.Controls.Add(this.Panel_UserManagement);
             this.Controls.Add(this.panel_TeaPlantManagement);
+            this.Controls.Add(this.panel_InventoryManagement);
+            this.Controls.Add(this.panel_SellManagement);
             this.Name = "Form_Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Manager";

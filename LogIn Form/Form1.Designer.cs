@@ -109,7 +109,7 @@ namespace LogIn_Form
             // 
             // Admin_Button
             // 
-            this.Admin_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.Admin_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.Admin_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Admin_Button.FlatAppearance.BorderSize = 0;
             this.Admin_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
@@ -126,7 +126,7 @@ namespace LogIn_Form
             // 
             // Manager_button
             // 
-            this.Manager_button.BackColor = System.Drawing.Color.Black;
+            this.Manager_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.Manager_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Manager_button.FlatAppearance.BorderSize = 0;
             this.Manager_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));

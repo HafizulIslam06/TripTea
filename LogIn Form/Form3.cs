@@ -30,11 +30,11 @@ namespace LogIn_Form
             dataGridView_TeaRecord();
         }
                 
-        Color select_color = Color.FromArgb(46, 49, 49);
-        Color unSelected_color = Color.FromArgb(0, 0, 0);
+        Color select_color = Color.FromArgb(37, 89, 121);
+        Color unSelected_color = Color.FromArgb(18, 28, 37);
 
         Color bar_selected = Color.FromArgb(52, 152, 219);
-        Color bar_unselected = Color.FromArgb(49, 46, 46);
+        Color bar_unselected = Color.FromArgb(18, 28, 37);
 
         private bool Manager_button1WasClicked = false;
         private bool sell_button1WasClicked = false;

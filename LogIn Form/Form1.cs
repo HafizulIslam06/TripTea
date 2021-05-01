@@ -19,9 +19,8 @@ namespace LogIn_Form
         public LogIn_Form()
         {
             InitializeComponent();
-
+            
         }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
          {
              bool status = checkBox_A.Checked;
@@ -68,10 +67,10 @@ namespace LogIn_Form
             }            
         }
 
-        Color select_color = Color.FromArgb(46, 49, 49);
-        Color unSelected_color = Color.FromArgb(0,0,0);
+        Color select_color = Color.FromArgb(37, 89, 121);
+        Color unSelected_color = Color.FromArgb(18, 28, 37);
         Color bar_selected = Color.FromArgb(52, 152, 219);
-        Color bar_unselected = Color.FromArgb(49, 46, 46);
+        Color bar_unselected = Color.FromArgb(33, 43, 52);
         
         
         private void Admin_Click(object sender, EventArgs e)
@@ -84,7 +83,7 @@ namespace LogIn_Form
             Manager_button.BackColor = unSelected_color;
 
             panel1.BackColor = bar_selected;
-            panel2.BackColor = bar_unselected;           
+            panel2.BackColor = bar_unselected;
         }
         
 
@@ -98,7 +97,7 @@ namespace LogIn_Form
             Admin_Button.BackColor = unSelected_color;
 
             panel2.BackColor = bar_selected;
-            panel1.BackColor = bar_unselected;            
+            panel1.BackColor = bar_unselected;
         }
             
 
@@ -166,5 +165,6 @@ namespace LogIn_Form
             textBox_M_Password.Clear();
             textBox_M_Password.UseSystemPasswordChar = true;
         }
+
     }
 }
