@@ -21,3 +21,26 @@ C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\bin\Debug\LiveCharts.WinForms.
 C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\Hafiz\source\repos\LogIn Form\LogIn Form\obj\Debug\TeaGardenManagement.csproj.CopyComplete
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LogIn Form.exe.config
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LogIn Form.exe
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LogIn Form.pdb
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.dll
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.pdb
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.xml
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\TeaGardenManagement.csprojAssemblyReference.cache
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\LogIn_Form.LogIn_Form.resources
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\LogIn_Form.Admin_Form.resources
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\LogIn_Form.Form_Manager.resources
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\LogIn_Form.Form4.resources
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\LogIn_Form.Properties.Resources.resources
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\TeaGardenManagement.csproj.GenerateResource.cache
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\TeaGardenManagement.csproj.CoreCompileInputs.cache
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\TeaGardenManagement.csproj.CopyComplete
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\LogIn Form.exe
+C:\Users\Hafiz\source\repos\TeaGardenManagement\LogIn Form\obj\Debug\LogIn Form.pdb

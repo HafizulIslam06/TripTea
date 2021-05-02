@@ -30,11 +30,11 @@ namespace LogIn_Form
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -171,6 +171,7 @@ namespace LogIn_Form
             this.button4.TabIndex = 6;
             this.button4.Text = "Help ";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -184,7 +185,7 @@ namespace LogIn_Form
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(341, 45);
             this.button3.TabIndex = 5;
-            this.button3.Text = "EXIT";
+            this.button3.Text = "Log Out";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -202,6 +203,7 @@ namespace LogIn_Form
             this.button2.TabIndex = 4;
             this.button2.Text = "Settings";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -271,28 +273,28 @@ namespace LogIn_Form
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(38, 165);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.ForestGreen;
-            series1.Legend = "Legend1";
-            series1.Name = "Product";
-            series2.ChartArea = "ChartArea1";
-            series2.Color = System.Drawing.Color.Brown;
-            series2.Legend = "Legend1";
-            series2.Name = "Cost";
-            series3.ChartArea = "ChartArea1";
-            series3.Color = System.Drawing.Color.RoyalBlue;
-            series3.Legend = "Legend1";
-            series3.Name = "Sale";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.Color = System.Drawing.Color.ForestGreen;
+            series7.Legend = "Legend1";
+            series7.Name = "Product";
+            series8.ChartArea = "ChartArea1";
+            series8.Color = System.Drawing.Color.Brown;
+            series8.Legend = "Legend1";
+            series8.Name = "Cost";
+            series9.ChartArea = "ChartArea1";
+            series9.Color = System.Drawing.Color.RoyalBlue;
+            series9.Legend = "Legend1";
+            series9.Name = "Sale";
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
+            this.chart1.Series.Add(series9);
             this.chart1.Size = new System.Drawing.Size(871, 503);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";

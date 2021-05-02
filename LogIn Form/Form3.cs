@@ -170,13 +170,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data Inserted Successfully");
+                MessageBox.Show("Data Inserted Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Manager_BindGridView();
                 StaffPanel_ResetForm();
             }
             else
             {
-                MessageBox.Show("Data Inserted Failed");
+                MessageBox.Show("Data Inserted Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -252,13 +252,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data updated Successfully");
+                MessageBox.Show("Data updated Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Manager_BindGridView();
                 StaffPanel_ResetForm();
             }
             else
             {
-                MessageBox.Show("Data updated Failed");
+                MessageBox.Show("Data updated Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -274,13 +274,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a >= 0)
             {
-                MessageBox.Show("Data deleted successfully");
+                MessageBox.Show("Data deleted successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Manager_BindGridView();
                 StaffPanel_ResetForm();
             }
             else
             {
-                MessageBox.Show("Data not deleted");
+                MessageBox.Show("Data not deleted", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -326,13 +326,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data Inserted Successfully");
+                MessageBox.Show("Data Inserted Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DataGridView_SellRecord();
                 SellManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data Inserted Failed");
+                MessageBox.Show("Data Inserted Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         
@@ -374,7 +374,7 @@ namespace LogIn_Form
         private void button_SellUpdate_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "update Sell_Record set Serial=@Serial,Buyer=@Buyer,Address=@Address, Email=@Email, [PhoneNo.]=@PhoneNo,Note=@Note where Serial=@Serial";
+            string query = "update Sell_Record set Serial=@Serial,Buyer=@Buyer,[Selling amount]=@Address, Email=@Email, [PhoneNo.]=@PhoneNo,Note=@Note where Serial=@Serial";
             SqlCommand cmd = new SqlCommand(query, con);
 
             cmd.Parameters.AddWithValue("@Serial", Convert.ToInt16(textBox_S_Serial.Text));
@@ -388,13 +388,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data updated Successfully");
+                MessageBox.Show("Data updated Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DataGridView_SellRecord();
                 SellManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data updated Failed");
+                MessageBox.Show("Data updated Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -410,13 +410,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a >= 0)
             {
-                MessageBox.Show("Data deleted successfully");
+                MessageBox.Show("Data deleted successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DataGridView_SellRecord();
                 SellManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data not deleted");
+                MessageBox.Show("Data not deleted", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -443,13 +443,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data Inserted Successfully");
+                MessageBox.Show("Data Inserted Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataGridView2();
                 InventoryManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data Inserted Failed");
+                MessageBox.Show("Data Inserted Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -493,13 +493,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data updated Successfully");
+                MessageBox.Show("Data updated Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataGridView2();
                 InventoryManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data updated Failed");
+                MessageBox.Show("Data updated Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -530,13 +530,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a >= 0)
             {
-                MessageBox.Show("Data deleted successfully");
+                MessageBox.Show("Data deleted successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataGridView2();
                 InventoryManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data not deleted");
+                MessageBox.Show("Data not deleted", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -564,14 +564,14 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data Inserted Successfully");
+                MessageBox.Show("Data Inserted Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataGridView_TeaRecord();
                 TeaManagement_ResetText();
                 PassToAnalysisTable();
             }
             else
             {
-                MessageBox.Show("Data Inserted Failed");
+                MessageBox.Show("Data Inserted Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -634,13 +634,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data updated Successfully");
+                MessageBox.Show("Data updated Successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataGridView_TeaRecord();
                 TeaManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data updated Failed");
+                MessageBox.Show("Data updated Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -665,13 +665,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a >= 0)
             {
-                MessageBox.Show("Data deleted successfully");
+                MessageBox.Show("Data deleted successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataGridView_TeaRecord();
                 TeaManagement_ResetText();
             }
             else
             {
-                MessageBox.Show("Data not deleted");
+                MessageBox.Show("Data not deleted", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

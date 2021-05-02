@@ -1317,10 +1317,10 @@ namespace LogIn_Form
             this.Controls.Add(this.button_SellManagement);
             this.Controls.Add(this.button_StaffManagement);
             this.Controls.Add(this.label_ManagerPanel);
+            this.Controls.Add(this.panel_SellManagement);
             this.Controls.Add(this.Panel_UserManagement);
             this.Controls.Add(this.panel_TeaPlantManagement);
             this.Controls.Add(this.panel_InventoryManagement);
-            this.Controls.Add(this.panel_SellManagement);
             this.Name = "Form_Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Manager";

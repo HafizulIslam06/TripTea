@@ -165,6 +165,5 @@ namespace LogIn_Form
             textBox_M_Password.Clear();
             textBox_M_Password.UseSystemPasswordChar = true;
         }
-
     }
 }

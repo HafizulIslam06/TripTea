@@ -45,7 +45,24 @@ namespace LogIn_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult check;
+            check=MessageBox.Show("Are you sure?","Log Out",MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (check == DialogResult.Yes)
+            {
+                this.Close();
+                LogIn_Form LgIn_frm = new LogIn_Form();
+                LgIn_frm.Show();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome!\nThe Support Inbox is your place to get updates about things that you've reported, check and reply to messages from the Help Team, and see important messages about your account\n\nFor help visit: www.hchgjvjfuyvg.com", "Help",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Pendding...", "Setting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -217,14 +217,14 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data Inserted Successfully");
+                MessageBox.Show("Data Inserted Successfully","Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 BindGridView();
                 ManagerInfoAdded();
                 ResetForm();                
             }
             else 
             {
-                MessageBox.Show("Data Inserted Failed");
+                MessageBox.Show("Data Inserted Failed", "Result", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -238,15 +238,7 @@ namespace LogIn_Form
             cmd.Parameters.AddWithValue("@Password", textBox_Password.Text);
 
             con.Open();
-            int a=cmd.ExecuteNonQuery();
-            if (a > 0)
-            {
-                MessageBox.Show("Connection with Manager Table is successful");
-            }
-            else
-            {
-                MessageBox.Show("Connection with Manager Table is not successful");
-            }
+            cmd.ExecuteNonQuery();
         }
 
         void ResetForm()
@@ -326,13 +318,13 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                MessageBox.Show("Data updated Successfully");
+                MessageBox.Show("Data updated Successfully","Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 BindGridView();
                 ResetForm();
             }
             else
             {
-                MessageBox.Show("Data updated Failed");
+                MessageBox.Show("Data updated Failed","Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -348,14 +340,14 @@ namespace LogIn_Form
             int a = cmd.ExecuteNonQuery();
             if (a >= 0)
             {
-                MessageBox.Show("Data deleted successfully");
+                MessageBox.Show("Data deleted successfully", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 BindGridView();
                 managerInfoDelete();
                 ResetForm();
             }
             else
             {
-                MessageBox.Show("Data not deleted");
+                MessageBox.Show("Data not deleted", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }            
         }
 
@@ -369,15 +361,7 @@ namespace LogIn_Form
             cmd.Parameters.AddWithValue("@Password", textBox_Password.Text);
 
             con.Open();
-            int a = cmd.ExecuteNonQuery();
-            if (a >= 0)
-            {
-                MessageBox.Show("done");
-            }
-            else
-            {
-                MessageBox.Show("failed");
-            }
+            cmd.ExecuteNonQuery();           
         }
 
         private void button_Reset_Click(object sender, EventArgs e)
